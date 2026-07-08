@@ -1,147 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philosophy of Experience</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nasi Kukus Ayam Dara</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
-    <div class="container">
+<!-- ================= NAVIGATION ================= -->
 
-        <h1>Philosophy of Experience</h1>
+<header>
 
-        <h2>“We never observe causation — only patterns.”</h2>
+<div class="logo">
+🍗 Ayam Dara
+</div>
 
-        <p class="quote">
-            Inspired by David Hume’s idea of causation, what we call “cause and effect”
-            may simply be repeated experience in the mind.
-        </p>
+<nav>
 
-        <div class="cards">
+<a href="#home">Home</a>
 
-            <div class="card">
-                <h3>🔥 Fire & Cotton</h3>
-                <p>
-                    We say fire burns cotton, but what we truly see is only
-                    fire followed by burning — not the hidden force itself.
-                </p>
-            </div>
+<a href="#about">About</a>
 
-            <div class="card">
-                <h3>🧠 Mind</h3>
-                <p>
-                    The mind forms habits from repetition and assumes
-                    the future will resemble the past.
-                </p>
-            </div>
+<a href="#menu">Menu</a>
 
-            <div class="card">
-                <h3>🌌 Reality</h3>
-                <p>
-                    What we call “truth” may be a structure built from repeated perception,
-                    not direct access to necessity.
-                </p>
-            </div>
+<a href="#gallery">Gallery</a>
 
-        </div>
+<a href="#contact">Contact</a>
 
-        <button onclick="alert('You are observing reality, not touching it.')">
-            Reflect
-        </button>
+</nav>
 
-    </div>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: "Segoe UI", sans-serif;
-}
+</header>
 
-body{
-    background: radial-gradient(circle at top, #1b1b2f, #0f0f1a);
-    color:white;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:40px;
-}
 
-.container{
-    max-width:900px;
-    text-align:center;
-}
+<!-- ================= HERO ================= -->
 
-h1{
-    font-size:42px;
-    margin-bottom:10px;
-    color:#f5f5f5;
-}
+<section class="hero" id="home">
 
-h2{
-    font-size:22px;
-    font-weight:400;
-    margin-bottom:20px;
-    color:#c9c9ff;
-}
+<div class="overlay">
 
-.quote{
-    font-style:italic;
-    margin-bottom:40px;
-    color:#b0b0d0;
-}
+<h1>
+Ayam Dara Rangup.<br>
+Sambal Padu.
+</h1>
 
-.cards{
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-bottom:40px;
-}
+<p>
 
-.card{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.1);
-    padding:20px;
-    width:260px;
-    border-radius:15px;
-    backdrop-filter: blur(10px);
-    transition:0.3s;
-}
+Nasi Kukus Ayam Dara & Nasi Lemak Ayam Dara
 
-.card:hover{
-    transform:translateY(-5px);
-    background:rgba(255,255,255,0.1);
-}
+</p>
 
-.card h3{
-    margin-bottom:10px;
-    color:#ffffff;
-}
+<div class="buttons">
 
-.card p{
-    font-size:14px;
-    color:#d0d0e6;
-    line-height:1.5;
-}
+<a href="#menu" class="btn">
+View Menu
+</a>
 
-button{
-    padding:12px 30px;
-    font-size:16px;
-    border:none;
-    border-radius:30px;
-    cursor:pointer;
-    background:#6c63ff;
-    color:white;
-    transition:0.3s;
-}
+<a href="https://wa.me/60178765736" class="btn2">
 
-button:hover{
-    background:#4b42d1;
-    transform:scale(1.05);
-}
+Order Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="left">
+
+<img src="images/stall.jpg">
+
+</div>
+
+<div class="right">
+
+<h2>
+
+Freshly Cooked Every Day
+
+</h2>
+
+<p>
+
+Our Ayam Dara is marinated with special spices before being fried until perfectly crispy.
+
+Every plate of Nasi Kukus and Nasi Lemak is served fresh together with our signature sambal.
+
+</p>
+
+<ul>
+
+<li>✔ Fresh Chicken Daily</li>
+
+<li>✔ Signature Sambal</li>
+
+<li>✔ Affordable Price</li>
+
+<li>✔ Fast Service</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu" id="menu">
+
+<h2>Our Signature Menu</h2>
+
+<div class="menu-container">
+
+<div class="card">
+
+<img src="images/hero.jpg">
+
+<h3>Nasi Kukus Ayam Dara</h3>
+
+<p>
+
+Steamed fragrant rice, crispy Ayam Dara, signature sambal.
+
+</p>
+
+<h4>RM8.00</h4>
+
+</div>
+
+<div class="card">
+
+<img src="images/hero.jpg">
+
+<h3>Nasi Lemak Ayam Dara</h3>
+
+<p>
+
+Coconut rice with crispy Ayam Dara and homemade sambal.
+
+</p>
+
+<h4>RM8.00</h4>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why">
+
+<h2>Why Customers Love Us</h2>
+
+<div class="features">
+
+<div>
+
+<i class="fa-solid fa-fire"></i>
+
+<h3>Fresh Daily</h3>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-drumstick-bite"></i>
+
+<h3>Young Chicken</h3>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-pepper-hot"></i>
+
+<h3>Signature Sambal</h3>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-money-bill"></i>
+
+<h3>Affordable</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery" id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-container">
+
+<img src="images/hero.jpg">
+
+<img src="images/stall.jpg">
+
+<img src="images/cook.jpg">
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<h2>
+
+Visit Us
+
+</h2>
+
+<p>
+
+📍 Behind MRT Taman Equine
+
+</p>
+
+<p>
+
+🕟 Monday - Friday
+
+4:30 PM - 9:00 PM
+
+</p>
+
+<p>
+
+📞 017-8765736
+
+</p>
+
+<a href="https://wa.me/60178765736" class="contact-btn">
+
+WhatsApp Us
+
+</a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Nasi Kukus Ayam Dara
+
+</p>
+
+</footer>
+
+
+
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/60178765736"
+class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+ <elevenlabs-convai agent-id="agent_6901kwgrz31nfy5rhj0yp47snb48"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>   
 </body>
 </html>
