@@ -1,308 +1,680 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+/* ==========================
+   GOOGLE FONT
+========================== */
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+<elevenlabs-convai agent-id="agent_6901kwgrz31nfy5rhj0yp47snb48"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+body{
+    background:#FFF8EE;
+    color:#333;
+    overflow-x:hidden;
+}
 
-<title>Nasi Kukus Ayam Dara</title>
+/* ==========================
+   HEADER
+========================== */
 
-<link rel="stylesheet" href="style.css">
+header{
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-</head>
+    padding:18px 8%;
 
-<body>
+    background:rgba(255,255,255,.90);
 
-<!-- ================= NAVIGATION ================= -->
+    backdrop-filter:blur(10px);
 
-<header>
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 
-<div class="logo">
-🍗 Ayam Dara
-</div>
+    z-index:999;
 
-<nav>
+}
 
-<a href="#home">Home</a>
+.logo{
 
-<a href="#about">About</a>
+    font-size:30px;
+    font-weight:700;
+    color:#c0392b;
 
-<a href="#menu">Menu</a>
+}
 
-<a href="#gallery">Gallery</a>
+nav a{
 
-<a href="#contact">Contact</a>
+    text-decoration:none;
 
-</nav>
+    color:#333;
 
-</header>
+    margin-left:35px;
 
+    font-weight:500;
 
-<!-- ================= HERO ================= -->
+    transition:.3s;
 
-<section class="hero" id="home">
+}
 
-<div class="overlay">
+nav a:hover{
 
-<h1>
-Ayam Dara Rangup.<br>
-Sambal Padu.
-</h1>
+    color:#e67e22;
 
-<p>
+}
 
-Nasi Kukus Ayam Dara & Nasi Lemak Ayam Dara
 
-</p>
+/* ==========================
+ HERO
+========================== */
 
-<div class="buttons">
+.hero{
 
-<a href="#menu" class="btn">
-View Menu
-</a>
+    height:100vh;
 
-<a href="https://wa.me/60178765736" class="btn2">
+    background:url("images/hero.jpg");
 
-Order Now
+    background-size:cover;
 
-</a>
+    background-position:center;
 
-</div>
+    position:relative;
 
-</div>
+}
 
-</section>
+.overlay{
 
+    position:absolute;
 
+    width:100%;
+    height:100%;
 
-<!-- ================= ABOUT ================= -->
+    background:rgba(0,0,0,.45);
 
-<section class="about" id="about">
+    display:flex;
 
-<div class="container">
+    justify-content:center;
 
-<div class="left">
+    align-items:center;
 
-<img src="images/stall.jpg">
+    flex-direction:column;
 
-</div>
+    text-align:center;
 
-<div class="right">
+    color:white;
 
-<h2>
+}
 
-Freshly Cooked Every Day
+.overlay h1{
 
-</h2>
+    font-size:65px;
 
-<p>
+    line-height:80px;
 
-Our Ayam Dara is marinated with special spices before being fried until perfectly crispy.
+    margin-bottom:25px;
 
-Every plate of Nasi Kukus and Nasi Lemak is served fresh together with our signature sambal.
+    animation:fadeDown 1s;
 
-</p>
+}
 
-<ul>
+.overlay p{
 
-<li>✔ Fresh Chicken Daily</li>
+    font-size:24px;
 
-<li>✔ Signature Sambal</li>
+    margin-bottom:35px;
 
-<li>✔ Affordable Price</li>
+}
 
-<li>✔ Fast Service</li>
+.buttons{
 
-</ul>
+    display:flex;
 
-</div>
+    gap:20px;
 
-</div>
+}
 
-</section>
+.btn{
 
+    padding:15px 35px;
 
+    background:#e67e22;
 
-<!-- ================= MENU ================= -->
+    color:white;
 
-<section class="menu" id="menu">
+    text-decoration:none;
 
-<h2>Our Signature Menu</h2>
+    border-radius:50px;
 
-<div class="menu-container">
+    transition:.3s;
 
-<div class="card">
+}
 
-<img src="images/hero.jpg">
+.btn:hover{
 
-<h3>Nasi Kukus Ayam Dara</h3>
+    background:#d35400;
 
-<p>
+    transform:translateY(-5px);
 
-Steamed fragrant rice, crispy Ayam Dara, signature sambal.
+}
 
-</p>
+.btn2{
 
-<h4>RM8.00</h4>
+    padding:15px 35px;
 
-</div>
+    border:2px solid white;
 
-<div class="card">
+    color:white;
 
-<img src="images/hero.jpg">
+    border-radius:50px;
 
-<h3>Nasi Lemak Ayam Dara</h3>
+    text-decoration:none;
 
-<p>
+    transition:.3s;
 
-Coconut rice with crispy Ayam Dara and homemade sambal.
+}
 
-</p>
+.btn2:hover{
 
-<h4>RM8.00</h4>
+    background:white;
 
-</div>
+    color:#c0392b;
 
-</div>
+}
 
-</section>
+/* ==========================
+ABOUT
+========================== */
 
+.about{
 
+    padding:100px 10%;
 
-<!-- ================= WHY US ================= -->
+}
 
-<section class="why">
+.container{
 
-<h2>Why Customers Love Us</h2>
+    display:flex;
 
-<div class="features">
+    align-items:center;
 
-<div>
+    gap:60px;
 
-<i class="fa-solid fa-fire"></i>
+    flex-wrap:wrap;
 
-<h3>Fresh Daily</h3>
+}
 
-</div>
+.left{
 
-<div>
+    flex:1;
 
-<i class="fa-solid fa-drumstick-bite"></i>
+}
 
-<h3>Young Chicken</h3>
+.left img{
 
-</div>
+    width:100%;
 
-<div>
+    border-radius:15px;
 
-<i class="fa-solid fa-pepper-hot"></i>
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
 
-<h3>Signature Sambal</h3>
+    transition:.5s;
 
-</div>
+}
 
-<div>
+.left img:hover{
 
-<i class="fa-solid fa-money-bill"></i>
+    transform:scale(1.05);
 
-<h3>Affordable</h3>
+}
 
-</div>
+.right{
 
-</div>
+    flex:1;
 
-</section>
+}
 
+.right h2{
 
+    font-size:42px;
 
-<!-- ================= GALLERY ================= -->
+    margin-bottom:20px;
 
-<section class="gallery" id="gallery">
+    color:#c0392b;
 
-<h2>Gallery</h2>
+}
 
-<div class="gallery-container">
+.right p{
 
-<img src="images/hero.jpg">
+    line-height:1.8;
 
-<img src="images/stall.jpg">
+    margin-bottom:20px;
 
-<img src="images/cook.jpg">
+}
 
-</div>
+.right li{
 
-</section>
+    margin-bottom:12px;
 
+    list-style:none;
 
+}
 
-<!-- ================= CONTACT ================= -->
+/* ==========================
+MENU
+========================== */
 
-<section class="contact" id="contact">
+.menu{
 
-<h2>
+    padding:100px 10%;
 
-Visit Us
+    text-align:center;
 
-</h2>
+    background:white;
 
-<p>
+}
 
-📍 Behind MRT Taman Equine
+.menu h2{
 
-</p>
+    font-size:42px;
 
-<p>
+    color:#c0392b;
 
-🕟 Monday - Friday
+    margin-bottom:50px;
 
-4:30 PM - 9:00 PM
+}
 
-</p>
+.menu-container{
 
-<p>
+    display:grid;
 
-📞 017-8765736
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
-</p>
+    gap:40px;
 
-<a href="https://wa.me/60178765736" class="contact-btn">
+}
 
-WhatsApp Us
+.card{
 
-</a>
+    background:#fff;
 
-</section>
+    border-radius:20px;
 
+    overflow:hidden;
 
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
 
-<!-- ================= FOOTER ================= -->
+    transition:.4s;
 
-<footer>
+}
 
-<p>
+.card:hover{
 
-© 2026 Nasi Kukus Ayam Dara
+    transform:translateY(-10px);
 
-</p>
+}
 
-</footer>
+.card img{
 
+    width:100%;
 
+    height:250px;
 
-<!-- Floating WhatsApp -->
+    object-fit:cover;
 
-<a href="https://wa.me/60178765736"
-class="whatsapp">
+}
 
-<i class="fab fa-whatsapp"></i>
+.card h3{
 
-</a>
+    margin-top:20px;
 
- <elevenlabs-convai agent-id="agent_6901kwgrz31nfy5rhj0yp47snb48"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
-</body>
-</html>
+    color:#c0392b;
+
+}
+
+.card p{
+
+    padding:15px;
+
+    color:#666;
+
+}
+
+.card h4{
+
+    color:#e67e22;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+/* ==========================
+WHY
+========================== */
+
+.why{
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+.why h2{
+
+    font-size:42px;
+
+    margin-bottom:50px;
+
+    color:#c0392b;
+
+}
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:30px;
+
+}
+
+.features div{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.features div:hover{
+
+    background:#c0392b;
+
+    color:white;
+
+    transform:translateY(-10px);
+
+}
+
+.features i{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+GALLERY
+========================== */
+
+.gallery{
+
+    padding:100px 10%;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.gallery h2{
+
+    margin-bottom:50px;
+
+    color:#c0392b;
+
+    font-size:42px;
+
+}
+
+.gallery-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    transition:.5s;
+
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================
+CONTACT
+========================== */
+
+.contact{
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    color:#c0392b;
+
+    font-size:42px;
+
+    margin-bottom:30px;
+
+}
+
+.contact p{
+
+    margin:15px 0;
+
+    font-size:20px;
+
+}
+
+.contact-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:15px 40px;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+/* ==========================
+WHATSAPP
+========================== */
+
+.whatsapp{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:34px;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.15);
+
+}
+
+/* ==========================
+ANIMATION
+========================== */
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    padding:15px;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+}
+
+nav a{
+
+    margin:10px;
+
+    display:inline-block;
+
+}
+
+.overlay h1{
+
+    font-size:42px;
+
+    line-height:50px;
+
+}
+
+.overlay p{
+
+    font-size:18px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.right h2,
+.menu h2,
+.gallery h2,
+.contact h2,
+.why h2{
+
+    font-size:34px;
+
+}
+
+}
